@@ -53,7 +53,7 @@ Azure Functions 앱을 로컬 환경에서 만들고 테스트 해볼 것이다.
     
     ![](https://github.com/Azure-Samples/functions-serverless-chat-app-tutorial/raw/master/media/create-cosmosdb-screenshot.png)
 
-1. Click **Create**.
+1. **Create** .
 
 
 ### Create an Azure SignalR Service instance
