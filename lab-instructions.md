@@ -28,17 +28,17 @@
 ===
 
 
-## Create Azure resources
+## Azure resources 만들기 
 
-You will build and test the Azure Functions app locally. The app will access some services in Azure that need to be created ahead of time.
+Azure Functions 앱을 로컬 환경에서 만들고 테스트 해볼 것이다. 이 앱은 앞으로 만들 Azure 내 서비스들과 연결 된다. 
 
-### Log into the Azure portal
+### Azure portal 로그인 하기 
 
-1. Go to the [Azure portal](https://portal.azure.com/) and log in with your credentials.
+1. [Azure portal](https://portal.azure.com/)에서 로그인.  
 
-### Create an Azure Cosmos DB account
+### Azure Cosmos DB 계정 만들기 
 
-1. Click on the **Create a resource** (**+**) button for creating a new Azure resource.
+1. **리소스 만들기** (**+**) 버튼을 클릭해서 새로운 Azure resource를 만든다.
 
 1. Under **Databases**, select **Azure Cosmos DB**.
 
