@@ -1,28 +1,28 @@
-# Build a real-time serverless chat app with Azure Functions
+# Azure Function 이용하여 실시간 Serverless 채팅 앱 만들기
 
-## Introduction
+## 소개 
 
-### Technologies used
+### 사용될 기술들
 
-* [Azure Storage](https://azure.microsoft.com/services/storage/?WT.mc_id=serverlesschatlab-tutorial-antchu) - Host the static website for the chat client UI
-* [Azure Functions](https://azure.microsoft.com/services/functions/?WT.mc_id=serverlesschatlab-tutorial-antchu) - Backend API for creating and retrieving chat messages
-* [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db/?WT.mc_id=serverlesschatlab-tutorial-antchu) - Store chat messages
-* [Azure SignalR Service](https://azure.microsoft.com/services/signalr-service/?WT.mc_id=serverlesschatlab-tutorial-antchu) - Broadcast new messages to connected chat clients
+* [Azure Storage](https://azure.microsoft.com/services/storage/?WT.mc_id=serverlesschatlab-tutorial-antchu) - 채팅 클라이언트 UI를 위한 정적 웹사이트 호스팅.
+* [Azure Functions](https://azure.microsoft.com/services/functions/?WT.mc_id=serverlesschatlab-tutorial-antchu) - 채팅 메세지를 만들고 처리할 백엔드 API.
+* [Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db/?WT.mc_id=serverlesschatlab-tutorial-antchu) - 채팅 메세지 저장.
+* [Azure SignalR Service](https://azure.microsoft.com/services/signalr-service/?WT.mc_id=serverlesschatlab-tutorial-antchu) - 연결된 채팅 클라이언트들에게 새로운 메세지 전달.
 
-### Prerequisites
+### 준비 사항
 
-> If you are using a prepared virtual machine for this lab, all prerequisites should already be installed.
+> 만약 가상머신이 이미 준비되어 있다면, 아래 사항들이 다 설치 되어 있을 수 있다. 
 
-The following software is required to build this tutorial.
+이 튜토리얼을 진행하기 위해서는 아래와 같은 소프트웨어가 필요하다.
 
 * [Git](https://git-scm.com/downloads)
 * [Node.js](https://nodejs.org/en/download/) (Version 10.x)
 * [.NET SDK](https://www.microsoft.com/net/download?WT.mc_id=serverlesschatlab-tutorial-antchu) (Version 2.x, required for Functions extensions)
 * [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) (Version 2)
-* [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=serverlesschatlab-tutorial-antchu) (VS Code) with the following extensions
+* [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=serverlesschatlab-tutorial-antchu) (VS Code) 와 아래 extensions
     * [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=serverlesschatlab-tutorial-antchu)
     * [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer&WT.mc_id=serverlesschatlab-tutorial-antchu)
-* [Postman](https://www.getpostman.com/) (optional, for testing Azure Functions)
+* [Postman](https://www.getpostman.com/) (필수 아님, Azure Functions 테스트용)
 
 
 ===
